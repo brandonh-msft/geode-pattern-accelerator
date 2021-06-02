@@ -53,7 +53,6 @@ resource "azurerm_frontdoor" "frontdoor" {
   frontend_endpoint {
     name                              = "geodeAPIFrontendEndpoint"
     host_name                         = "${var.base_name}frontdoor.azurefd.net"
-    custom_https_provisioning_enabled = false
   }
 
   routing_rule {
